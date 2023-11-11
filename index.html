@@ -13,6 +13,10 @@ body {
   float: left;
   width: 20%;
 }
+#presentacion {
+  background-color: gray;
+  padding: 10px;
+}
 </style>
 </head>
 <body>
@@ -25,49 +29,26 @@ body {
 <button onclick="mostrarCorte1()">Corte 1</button>
 <button onclick="mostrarCorte2()">Corte 2</button>
 <button onclick="mostrarCorte3()">Corte 3</button>
-<button onclick="window.location.href='https://github.com/user/repo/tree/main/folder1'">Corte 1</button>
-<button onclick="window.location.href='https://github.com/Dracarys0320/Dracarys0320.github.io/tree/main/Metodo%20Adapter'">Corte 2</button>
-<button onclick="window.location.href='https://github.com/user/repo/tree/main/folder3'">Corte 3</button>
 
 <div id="presentacion">
   <h3>Presentación Personal</h3>
-  <p>¡Hola! Soy Jannina Castellanos. Me apasiona la programación y disfruto explorando diferentes lenguajes y tecnologías. ¡Bienvenido a mi página!</p>
-</div>
-
-<div id="corte1" style="display:none;">
-  <h3>Conclusión del Corte 1</h3>
-  <p>USTED HA SIDO HACKEADO!!!!</p>
-</div>
-
-<div id="corte2" style="display:none;">
-  <h3>Conclusión del Corte 2</h3>
-  <p>Aquí va la conclusión del Corte 2.</p>
-</div>
-
-<div id="corte3" style="display:none;">
-  <h3>Conclusión del Corte 3</h3>
-  <p>Aquí va la conclusión del Corte 3.</p>
+  <p>¡Hola! Soy Jannina Castellanos. Disfruto explorando diferentes lenguajes y tecnologías. ¡Bienvenido a mi página!</p>
 </div>
 
 <script>
 function mostrarCorte1() {
-  document.getElementById("corte1").style.display = "block";
-  document.getElementById("corte2").style.display = "none";
-  document.getElementById("corte3").style.display = "none";
+  document.getElementById("presentacion").innerHTML = "<h3>Conclusión del Corte 1</h3><p>USTED HA SIDO HACKEADO!!!!</p><p><a href='https://github.com/user/repo/tree/main/folder1'>Ver código en GitHub</a></p>";
 }
 
 function mostrarCorte2() {
-  document.getElementById("corte1").style.display = "none";
-  document.getElementById("corte2").style.display = "block";
-  document.getElementById("corte3").style.display = "none";
+  document.getElementById("presentacion").innerHTML = "<h3>Conclusión del Corte 2</h3><p>Aquí va la conclusión del Corte 2.</p><p><a href='https://github.com/Dracarys0320/Dracarys0320.github.io/tree/main/Metodo%20Adapter'>Ver código en GitHub</a></p>";
 }
 
 function mostrarCorte3() {
-  document.getElementById("corte1").style.display = "none";
-  document.getElementById("corte2").style.display = "none";
-  document.getElementById("corte3").style.display = "block";
+  document.getElementById("presentacion").innerHTML = "<h3>Conclusión del Corte 3</h3><p>Aquí va la conclusión del Corte 3.</p><p><a href='https://github.com/user/repo/tree/main/folder3'>Ver código en GitHub</a></p>";
 }
 </script>
 
 </body>
+</html>
 </html>
