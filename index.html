@@ -13,8 +13,6 @@ body {
   float: left;
   width: 20%;
 }
-
-}
 </style>
 </head>
 <body>
@@ -35,7 +33,13 @@ body {
 
 <script>
 function mostrarCorte1() {
-  document.getElementById("presentacion").innerHTML = "<h3>Conclusión del Corte 1</h3><p>USTED HA SIDO HACKEADO!!!!</p><p><a href='https://github.com/user/repo/tree/main/folder1'>Ver código en GitHub</a></p>";
+  document.getElementById("presentacion").innerHTML = "<h3>Conclusión del Corte 1</h3><p>Aquí va la conclusión del Corte 1.</p><p><a href='https://github.com/user/repo/tree/main/folder1'>Ver código en GitHub</a></p>";
+
+  // Agregar botón interno para el mapa mental
+  document.getElementById("presentacion").innerHTML += "<button onclick='mostrarMapaMental()'>Mapa Mental</button>";
+
+  // Agregar botón interno para la conclusión específica del Corte 1
+  document.getElementById("presentacion").innerHTML += "<button onclick='mostrarConclucionCorte1()'>Conclusión Específica</button>";
 }
 
 function mostrarCorte2() {
@@ -45,8 +49,21 @@ function mostrarCorte2() {
 function mostrarCorte3() {
   document.getElementById("presentacion").innerHTML = "<h3>Conclusión del Corte 3</h3><p>Aquí va la conclusión del Corte 3.</p><p><a href='https://github.com/user/repo/tree/main/folder3'>Ver código en GitHub</a></p>";
 }
+
+function mostrarMapaMental() {
+  // Crear un elemento de imagen
+  var imagenMapaMental = document.createElement("img");
+  
+  // Establecer la fuente de la imagen (reemplaza 'url_del_mapa_mental.png' con la URL de tu imagen)
+  imagenMapaMental.src = 'https://github.com/user/repo/raw/main/mapas_mentales/mapa_mental.png';
+
+  // Ajustar el tamaño si es necesario
+  imagenMapaMental.style.width = "100%";
+  
+  // Agregar la imagen al documento
+  document.getElementById("presentacion").appendChild(imagenMapaMental);
+}
 </script>
 
 </body>
-</html>
 </html>
